@@ -1,7 +1,9 @@
 <?php  
 
+if(!isset($_COOKIE['id'])){
+  setcookie('id', rand(1000,9999), time() + (86400 * 30), "/");
 
-setcookie('id', rand(1000,9999), time() + (86400 * 30), "/");
+}
 
 if(!isset($_GET["admin"]) && isset($_COOKIE['id'])){
     
