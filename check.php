@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
 
     if ($_COOKIE['id'] == "0"){
-        echo "what the path admin ? \n index.php?user=admin(id)";
+        echo "what the path admin ? \n index.php?admin";
 
     }elseif($name == "0"){
         echo "are u developer!!!";
